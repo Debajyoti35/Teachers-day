@@ -4,14 +4,32 @@
 <head>
     <title>Teachers day</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
 <body>
     <header id="header">
         <a href="#" class="logo">🎀 ✍️𝒯𝐸𝒜𝒞𝐻𝐸𝑅'𝒮 𝒟𝒜𝒴 ✍️🎀</a>
         <ul>
-            <li><a href="#" class="active">🎀👉 𝒞𝓁𝒾𝒸𝓀 𝒽𝑒𝓇𝑒 👈🎀</a></li>
+            <!-- Button trigger modal -->
+            <li>
+                <a href="#" type="button" class="active btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">🎀👉 𝒞𝓁𝒾𝒸𝓀 𝒽𝑒𝓇𝑒 👈🎀</a>
+            </li>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center fw-bold">
+                            ✩  🎀  💕🖋️😊HAPPY TEACHER'S DAY😊💕🖋️  🎀  ✩
+                        </div>
+                    </div>
+                </div>
+            </div>
         </ul>
     </header>
     <section>
@@ -28,7 +46,7 @@
         <p>Good morning to the Principal, respected teachers, and my dear friends. We all have gathered here to
             celebrate the celebration of Teacher’s Day. <br>
 
-            My name is Debajyoti pal. I am a student studying in class 7th, I want to share my thoughts on Teacher’s
+            My name is Haaris Hassan. I am a student studying in class 7th, I want to share my thoughts on Teacher’s
             Day.<br>
 
             But, first of all, I would like to thank my class teacher for giving me the opportunity to give a speech on
@@ -88,10 +106,14 @@
         let forest = document.getElementById('forest');
         let header = document.getElementById('header');
 
-        window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function () {
             let value = window.scrollY;
 
             text.style.top = 60 + value * -0.2 + '%';
+            // bird1.style.top = value * -1.5 + 'px';
+            // bird1.style.left = value * 2 + 'px';
+            // bird2.style.top = value * -1.5 + 'px';
+            // bird2.style.left = value * -5 + 'px';
             btn.style.marginTop = value * 1.5 + 'px';
             rocks.style.top = value * -0.12 + 'px';
             forest.style.top = value * 0.25 + 'px';
@@ -100,7 +122,12 @@
     </script>
     <script src="confetti.js"></script>
     <script>confetti.start();</script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
